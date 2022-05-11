@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+
+
+
+    .text__input__file {
+        @apply mb-[20px] block text-sm text-slate-500
+        file:mr-4 file:py-2 file:px-4
+        file:rounded-full file:border-0
+        file:text-sm file:font-semibold
+        file:bg-violet-50 file:text-violet-700
+        hover:file:bg-violet-100 ;
+    }
+
+
+    .text__input {
+        @apply mt-1 block px-3 py-2 bg-white border-2 rounded text-sm shadow-sm  border-black;
+    }
+
+    .btn__handle {
+        @apply bg-[#6155A6] text-white px-2 py-2 mr-3 rounded cursor-pointer;
+    }
+    .text__head__table{
+        @apply border-2 border-[grey];
+    }
+
+    .text__data__table{
+        @apply border-2 border-[grey] text-center;
+    }
+    table tr:nth-child(even){
+        background-color: #BEF2F5
+    }
+
+    table{
+        table-layout: fixed; 
+        width:100%;
+    }
+    i{
+        cursor: pointer;
+        @apply text-[#333] bg-[#ECECEC] px-3 py-3 
+    }
+
+    thead{
+        border:2px solid black;
+        position: sticky;
+        background: white;
+    }
+}
